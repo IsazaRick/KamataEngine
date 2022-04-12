@@ -42,6 +42,18 @@ class GameScene {
 	/// </summary>
 	void Draw();
 
+	uint32_t textureHandle_ = 0;
+	Sprite* sprite_ = nullptr;
+	Model* model_ = nullptr;
+
+	WorldTransform worldTransform_;
+	ViewProjection viewProjection_;
+
+	uint32_t soundDataHandle_ = 0;
+	uint32_t voiceHandle_ = 0;
+
+	int32_t value_ = 0;
+
   private: // メンバ変数
 	DirectXCommon* dxCommon_ = nullptr;
 	Input* input_ = nullptr;
